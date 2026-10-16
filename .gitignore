@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C++ Build & Object artifacts
+build/
+bin/
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+
+# Test & Benchmark Output Logs
+*.log
+*.csv.tmp
+soak_test_report.csv
+mx3_power_test.csv
+
+# Virtual Environments
+.venv/
+venv/
+mx/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

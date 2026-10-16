@@ -1,0 +1,30 @@
+[Unit]
+Description=ProAI77 Vision Inference & Edge AI Service
+After=network.target mxa-manager.service
+Wants=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/proai77/app
+ExecStart=/opt/proai77/app/bin/vision_pipeline --config /opt/proai77/app/config.json
+Restart=always
+RestartSec=3s
+KillMode=mixed
+TimeoutStopSec=10s
+
+# Real-time and CPU affinity configuration
+# Pin to Cortex-A76 performance cores (4-7) for inference pipeline
+CPUAffinity=4-7
+Nice=-10
+
+# Memory and resource limits
+LimitNOFILE=65535
+LimitMEMLOCK=infinity
+
+# Logging to journald
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+{
+  "name": "proai77-embedded-skills",
+  "displayName": "ProAI77 & MemryX MX3 Embedded Skills",
+  "version": "1.0.0",
+  "description": "ARM embedded skills, tools, and best-practice rules for the ProAI77 Edge AI Platform (Rockchip RK3588 + MemryX MX3 M.2 4-chip module). Covers MPP HW decode/encode, RGA 2D zero-copy, Armv8.2-A NEON, big.LITTLE scheduling, M.2 9W power capping, Python/C++/Hybrid pipelines, and MX3 + RK3588 NPU co-execution.",
+  "suggestedPrompts": [
+    "檢查我的 ProAI77 開發環境與板端硬體狀態",
+    "幫我篩選符合 M.2 9W 功耗限制與 FPS 目標的 MX3 視覺模型與工作時脈",
+    "設計一個結合 Rockchip MPP 硬體解碼與 MemryX MX3 推論的視訊管線",
+    "評估此任務是否適合由 RK3588 NPU (RKNN/RKLLM) 與 MemryX MX3 協同執行",
+    "依據 Arm 效能指南與專案規範審查目前的 C++/Python 程式碼"
+  ]
+}
