@@ -52,7 +52,7 @@ Checks:
 ## 3. Power Compliance & Thermal Burn-In (`mx3_stability_power_test.sh`)
 To verify that a selected model and frequency comply with the **M.2 ≤ 9000 mW** rule:
 ```bash
-bash skills/mx3-runtime-proai77/scripts/mx3_stability_power_test.sh \
+bash skills/proai77-mx3-runtime/scripts/mx3_stability_power_test.sh \
     --dfp ~/models/yolo26n_c4.dfp \
     --freq 400 \
     --minutes 10 \

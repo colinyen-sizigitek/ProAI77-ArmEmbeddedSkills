@@ -2,7 +2,7 @@
 
 <!-- proai77-skills:begin — managed by ProAI77 Embedded Skills; source in shared/AGENTS.proai77.md -->
 
-These rules apply to every task in this repository and on the ProAI77 edge device. Detailed workflows live in the specialized skills (`proai77-platform`, `proai77-media-pipeline`, `proai77-perf-optimization`, `mx3-model-selection-proai77`, `mx3-model-compile-proai77`, `mx3-runtime-proai77`, `rk3588-npu-coexecution`, `proai77-remote-viewer`, `proai77-code-review`). Load the matching skill before non-trivial work in its area.
+These rules apply to every task in this repository and on the ProAI77 edge device. Detailed workflows live in the specialized skills (`proai77-platform`, `proai77-media-pipeline`, `proai77-perf-optimization`, `proai77-mx3-model-selection`, `proai77-mx3-model-compile`, `proai77-mx3-runtime`, `proai77-rk3588-npu-coexecution`, `proai77-remote-viewer`, `proai77-code-review`). Load the matching skill before non-trivial work in its area.
 
 ## Platform Facts (ProAI77 / ProAIBox77 V1.6)
 - **SoC**: Rockchip **RK3588** (8nm):

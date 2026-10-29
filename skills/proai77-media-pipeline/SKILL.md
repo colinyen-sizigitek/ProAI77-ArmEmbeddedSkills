@@ -9,7 +9,7 @@ metadata:
   triggers: "mpp, rga, video pipeline, rtsp, uvc, decode, encode, gstreamer, zero-copy, dma-buf, 影像管線, 硬解, 零拷貝, 縮放, 串流"
   role: "media pipeline architect"
   scope: "MPP decode/encode, RGA 2D operations, GPU kernels, multi-stream capture and streaming"
-  related-skills: "proai77-platform, proai77-perf-optimization, mx3-runtime-proai77, proai77-remote-viewer, proai77-code-review"
+  related-skills: "proai77-platform, proai77-perf-optimization, proai77-mx3-runtime, proai77-remote-viewer, proai77-code-review"
 ---
 
 # ProAI77 Hardware-Accelerated Media Pipeline

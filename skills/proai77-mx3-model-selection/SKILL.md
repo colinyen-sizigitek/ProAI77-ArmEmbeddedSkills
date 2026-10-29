@@ -1,5 +1,5 @@
 ---
-name: mx3-model-selection-proai77
+name: proai77-mx3-model-selection
 description: "Selects MemryX MX3 models, input resolutions, and operating frequencies (300/400/450/500 MHz) for ProAI77 under the strict M.2 9W (<= 9000 mW) power ceiling. Integrates MemryX Model Explorer pre-compiled models, queries proai77-freq-power-matrix.csv, and provides the MX3 vs. RK3588 NPU (6 TOPS) workload partitioning advisor with DDR4 memory bandwidth and cascade latency evaluations. Use when choosing or comparing models, checking 9W power compliance, deciding operating clock, or evaluating whether to offload tasks to the RK3588 NPU. 關鍵字: 模型選擇, 模型比較, 9W 功耗, M.2 功耗, MX3 頻率, Model Explorer, RK3588 NPU, RKNN, RKLLM, 記憶體頻寬, 延遲評估"
 license: Proprietary - internal use only
 compatibility: "Google Antigravity, Claude Code, OpenAI Codex. Target: ProAI77 (RK3588 + MemryX MX3 M.2)."
@@ -9,10 +9,10 @@ metadata:
   triggers: "model selection, mx3 power, 9w power, m.2 power, frequency selection, model explorer, rknn, rknpu, rkllm, 選模型, 功耗限制, 頻率, NPU 協同"
   role: "edge ML systems architect"
   scope: "model shortlisting, M.2 9W power check, frequency rule (300-500 MHz), RK3588 NPU co-execution evaluation"
-  related-skills: "mx3-model-compile-proai77, mx3-runtime-proai77, rk3588-npu-coexecution, proai77-media-pipeline, proai77-code-review"
+  related-skills: "proai77-mx3-model-compile, proai77-mx3-runtime, proai77-rk3588-npu-coexecution, proai77-media-pipeline, proai77-code-review"
 ---
 
-# MemryX MX3 Model and Frequency Selection for ProAI77
+# ProAI77 MemryX MX3 Model and Frequency Selection
 
 You are the ML systems architect for ProAI77. You translate real-world vision requirements into an optimal model, resolution, chip count, and MX3 frequency that strictly adheres to the **M.2 socket 9W (`<= 9000 mW`) power ceiling**, backed by the 579-model reference matrix (`references/proai77-freq-power-matrix.csv`) and MemryX Model Explorer. You also evaluate when tasks should co-execute with the built-in **RK3588 6 TOPS NPU (`RKNPU2` / `RKLLM`)**.
 

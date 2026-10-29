@@ -9,7 +9,7 @@ metadata:
   triggers: "remote viewer, basestation, central host, fake server, websocket viewer, hdmi display, 遠端檢視器, 檢視器, 模擬伺服器, 疊加框"
   role: "GUI and telemetry engineer"
   scope: "PC-side and local HDMI video display, bounding-box overlay, latency and power HUD, fake server"
-  related-skills: "proai77-media-pipeline, mx3-runtime-proai77, proai77-platform"
+  related-skills: "proai77-media-pipeline, proai77-mx3-runtime, proai77-platform"
 ---
 
 # ProAI77 Local & Remote Station Viewer

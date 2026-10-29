@@ -29,10 +29,10 @@
 | **`proai77-platform`** | 硬體狀態與驅動偵測、雙軌 SDK 環境安裝 (Mode A PC編譯部署 / Mode B 板端完整SDK)、CMake 與 systemd 服務管理 |
 | **`proai77-media-pipeline`** | 多路 RTSP/UVC 擷取、MPP 硬解硬編、RGA/GPU 零拷貝前處理、HDMI/RTSP/WebSocket 輸出管線 |
 | **`proai77-perf-optimization`** | Cortex-A76/A55 big.LITTLE 綁核、Armv8.2-A NEON 向量化、DDR4 頻寬防塞車、零拷貝緩衝池優化 |
-| **`mx3-model-selection-proai77`** | 依據目標 FPS 與 **M.2 ≤ 9W** 限制篩選 579 模型與時脈，整合 Model Explorer，提供 RK NPU 協同評估 |
-| **`mx3-model-compile-proai77`** | Model Explorer 預編譯 DFP 下載、x86 PC/WSL2 `mx_nc` 編譯部署 (Mode A)、板端 `~/mx` 防 OOM 編譯 (Mode B) |
-| **`mx3-runtime-proai77`** | C++ (`MxAcclMT`) 與 Python (`AsyncAccl`/`MultiStreamAsyncAccl`) 執行期整合、時脈設定、9W 功耗與溫度守護 |
-| **`rk3588-npu-coexecution`** | RK3588 6 TOPS NPU 協同處理：LLM/VLM (`rknn-llm`)、語音/OCR、次要 ROI 模型並行、DDR4 頻寬與延遲檢核 |
+| **`proai77-mx3-model-selection`** | 依據目標 FPS 與 **M.2 ≤ 9W** 限制篩選 579 模型與時脈，整合 Model Explorer，提供 RK NPU 協同評估 |
+| **`proai77-mx3-model-compile`** | Model Explorer 預編譯 DFP 下載、x86 PC/WSL2 `mx_nc` 編譯部署 (Mode A)、板端 `~/mx` 防 OOM 編譯 (Mode B) |
+| **`proai77-mx3-runtime`** | C++ (`MxAcclMT`) 與 Python (`AsyncAccl`/`MultiStreamAsyncAccl`) 執行期整合、時脈設定、9W 功耗與溫度守護 |
+| **`proai77-rk3588-npu-coexecution`** | RK3588 6 TOPS NPU 協同處理：LLM/VLM (`rknn-llm`)、語音/OCR、次要 ROI 模型並行、DDR4 頻寬與延遲檢核 |
 | **`proai77-remote-viewer`** | 本地 HDMI 顯示與遠端 Central Host / Browser 檢視器（支援 RTSP/WebRTC/WebSocket、延遲與功耗 HUD 疊加） |
 | **`proai77-code-review`** | 依據專案規範與 Arm 最佳實踐進行 C++17 / Python 程式碼審查（檢查 9W 規範、硬體解碼落實度、綁核與記憶體洩漏） |
 
@@ -85,5 +85,5 @@ python scripts/validate.py
 
 測試 9W 功耗與時脈篩選工具：
 ```bash
-python skills/mx3-model-selection-proai77/scripts/freq_power_query.py --model-regex "YOLO26_nano_640" --target-fps 30 --max-power-mw 9000
+python skills/proai77-mx3-model-selection/scripts/freq_power_query.py --model-regex "YOLO26_nano_640" --target-fps 30 --max-power-mw 9000
 ```

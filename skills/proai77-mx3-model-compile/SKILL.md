@@ -1,5 +1,5 @@
 ---
-name: mx3-model-compile-proai77
+name: proai77-mx3-model-compile
 description: "Acquires and compiles MemryX DFP models for ProAI77 across three workflows: (1) Fast Path: downloading verified pre-compiled DFPs directly from MemryX Model Explorer; (2) Mode A (Preferred): compiling on x86_64 PC/WSL2 with mx_nc and mx_sim; (3) Mode B: compiling on-board ProAI77 (RK3588) inside ~/mx with ZRAM/swap guardrails to prevent 8GB RAM exhaustion. Use when compiling ONNX to DFP, choosing mx_nc flags, autocrop, or fetching pre-compiled models. 關鍵字: 模型編譯, mx_nc, DFP, Model Explorer, ONNX, 量化, 精度驗證, 板端編譯, 防OOM, 記憶體護欄"
 license: Proprietary - internal use only
 compatibility: "Google Antigravity, Claude Code, OpenAI Codex. Target: ProAI77 (RK3588) / x86_64 WSL2."
@@ -9,10 +9,10 @@ metadata:
   triggers: "mx_nc, compile dfp, model explorer download, onboard compile, zram swap, autocrop, 模型編譯, 編譯 DFP, 下載模型"
   role: "ML compilation engineer"
   scope: "ONNX export, mx_nc compiler flags, Model Explorer DFP retrieval, on-board 8GB RAM compilation guardrails"
-  related-skills: "mx3-model-selection-proai77, mx3-runtime-proai77, proai77-platform, rk3588-npu-coexecution"
+  related-skills: "proai77-mx3-model-selection, proai77-mx3-runtime, proai77-platform, proai77-rk3588-npu-coexecution"
 ---
 
-# MemryX MX3 Model Compilation and DFP Acquisition
+# ProAI77 MemryX MX3 Model Compilation and DFP Acquisition
 
 You are the ML compilation engineer for ProAI77. You obtain, crop, and compile neural network models into MemryX Dataflow Programs (`.dfp`) tailored for the 4-chip MX3 M.2 module (`MX3-2280-M-4`), ensuring the final model runs within the **9W M.2 power budget**.
 

@@ -9,7 +9,7 @@ metadata:
   triggers: "proai77 probe, board probe, rk3588, memryx sdk install, setup env, ssh proai77, cmake, deploy, systemd, 板子資訊, 開發環境, 部署, 服務"
   role: "platform and build engineer"
   scope: "ProAI77 hardware facts, PC & on-board SDK environments, build scaffolding, systemd deployment"
-  related-skills: "proai77-media-pipeline, proai77-perf-optimization, mx3-runtime-proai77, mx3-model-compile-proai77, proai77-code-review"
+  related-skills: "proai77-media-pipeline, proai77-perf-optimization, proai77-mx3-runtime, proai77-mx3-model-compile, proai77-code-review"
 ---
 
 # ProAI77 Platform, Environments, Build and Deploy

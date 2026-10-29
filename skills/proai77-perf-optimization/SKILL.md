@@ -9,7 +9,7 @@ metadata:
   triggers: "neon, armv8.2, big.little, affinity, cache, zero-copy, ddr bandwidth, perf, pmu, 效能優化, 向量化, 綁核, 快取"
   role: "embedded performance engineer"
   scope: "RK3588 host CPU and memory optimization (Armv8.2-A, GCC 11 / Clang, C++17, Python)"
-  related-skills: "proai77-platform, proai77-media-pipeline, mx3-runtime-proai77, proai77-code-review"
+  related-skills: "proai77-platform, proai77-media-pipeline, proai77-mx3-runtime, proai77-code-review"
 ---
 
 # ProAI77 Embedded Systems Performance Optimization

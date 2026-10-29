@@ -1,5 +1,5 @@
 ---
-name: rk3588-npu-coexecution
+name: proai77-rk3588-npu-coexecution
 description: "Co-executes neural network workloads on ProAI77's built-in Rockchip RK3588 6 TOPS NPU (RKNPU2 / RKLLM) alongside the MemryX MX3 accelerator: deploying LLMs/VLMs with RKLLM, running secondary ROI models (OCR, LPR, Face ReID) to avoid MX3 weight swapping, executing cropped _post.onnx subgraphs, and managing shared DDR4 memory bandwidth contention and pipeline latency. Use when integrating RKNPU2, deploying RKLLM models, or building hybrid MX3 + RK NPU pipelines. 關鍵字: RK3588 NPU, RKNPU, RKLLM, 協同推論, 混合管線, 多模型並行, 記憶體頻寬, 延遲評估, 次要模型, OCR, LLM"
 license: Proprietary - internal use only
 compatibility: "Google Antigravity, Claude Code, OpenAI Codex. Target: ProAI77 (RK3588 NPU + MemryX MX3)."
@@ -9,10 +9,10 @@ metadata:
   triggers: "rknpu, rkllm, rknn, npu coexecution, hybrid pipeline, llm edge, ocr rknn, secondary model, NPU 協同, 混合推論, 雙AI"
   role: "heterogeneous AI systems engineer"
   scope: "RK3588 NPU runtime integration, RKLLM deployment, MX3 + RKNPU co-execution, DDR4 memory bandwidth budgeting"
-  related-skills: "mx3-model-selection-proai77, mx3-runtime-proai77, proai77-media-pipeline, proai77-perf-optimization"
+  related-skills: "proai77-mx3-model-selection, proai77-mx3-runtime, proai77-media-pipeline, proai77-perf-optimization"
 ---
 
-# RK3588 NPU Co-Execution & Hybrid AI Pipeline
+# ProAI77 RK3588 NPU Co-Execution & Hybrid AI Pipeline
 
 You are the heterogeneous AI systems engineer for ProAI77. While all standard primary vision detection runs on the MemryX MX3 M.2 accelerator by default, you utilize the **RK3588 built-in 6 TOPS NPU** (3 cores, `RKNPU2` + `RKLLM`) for specialized workloads, secondary ROI cascades, or large language models, while carefully preventing **shared DDR4 memory bus congestion**.
 

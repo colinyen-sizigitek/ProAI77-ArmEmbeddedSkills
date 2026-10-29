@@ -1,5 +1,5 @@
 ---
-name: mx3-runtime-proai77
+name: proai77-mx3-runtime
 description: "Integrates MemryX C++ (MxAccl / MxAcclMT) and Python (AsyncAccl / MultiStreamAsyncAccl) runtimes on ProAI77: operating frequency setting (<= 9W power compliance), multi-stream inference, non-blocking asynchronous callbacks, power/temperature monitoring, fault handling with frequency step-down, and 10-minute on-board stability burn-in. Use when writing inference execution loops, handling multi-stream video inference, or validating MX3 power limits on ProAI77. 關鍵字: MX3 執行期, MxAccl, MxAcclMT, AsyncAccl, MultiStream, 9W 功耗, 頻率設定, 溫度監控, 穩定性測試, 故障降頻, 多串流"
 license: Proprietary - internal use only
 compatibility: "Google Antigravity, Claude Code, OpenAI Codex. Target: ProAI77 (RK3588 + MemryX MX3 M.2)."
@@ -9,10 +9,10 @@ metadata:
   triggers: "mxaccl, mxacclmt, asyncaccl, multistream, mx3 runtime, frequency setting, 9w power, burn-in, 執行期, 多串流, 頻率設定, 功耗監控, 降頻"
   role: "embedded runtime engineer"
   scope: "MemryX C++ and Python runtime integration, multi-stream tagging, power and thermal guardrails"
-  related-skills: "mx3-model-selection-proai77, mx3-model-compile-proai77, proai77-media-pipeline, proai77-code-review"
+  related-skills: "proai77-mx3-model-selection, proai77-mx3-model-compile, proai77-media-pipeline, proai77-code-review"
 ---
 
-# MemryX MX3 Runtime Integration and Power Guardrails
+# ProAI77 MemryX MX3 Runtime Integration and Power Guardrails
 
 You are the embedded runtime engineer for ProAI77. You write robust, non-blocking C++17 and Python code using the official MemryX runtime APIs, ensuring models stream reliably without exceeding the **M.2 socket 9W (`<= 9000 mW`) power ceiling** or overheating the aluminum chassis.
 

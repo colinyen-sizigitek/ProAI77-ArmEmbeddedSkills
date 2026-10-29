@@ -9,7 +9,7 @@ metadata:
   triggers: "code review, audit code, review pr, 程式碼審查, 審查 PR, 上線檢查, 效能審查, 規範檢查"
   role: "embedded code review auditor"
   scope: "C++17 and Python codebases targeting ProAI77 (RK3588 + MemryX MX3)"
-  related-skills: "proai77-platform, proai77-media-pipeline, proai77-perf-optimization, mx3-runtime-proai77, rk3588-npu-coexecution"
+  related-skills: "proai77-platform, proai77-media-pipeline, proai77-perf-optimization, proai77-mx3-runtime, proai77-rk3588-npu-coexecution"
 ---
 
 # ProAI77 Embedded Systems Code Review
